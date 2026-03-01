@@ -1,4 +1,3 @@
-
 const loadProducts = () => {
   fetch("https://fakestoreapi.com/products")
     .then((res) => res.json())
@@ -21,7 +20,6 @@ const alldisplayProducts = (products) => {
         </figure>
         <div class="card-body">
             <div class="badge py-2 badge-outline bg-blue-600 text-white">${product.category}</div>
-
           <div class="flex justify-between">
             <h2 class="card-title">${product.title}</h2>
             <span class="text-lg"><i class="fa-solid fa-star"></i>${product.rating.rate} (${product.rating.count})</span>
